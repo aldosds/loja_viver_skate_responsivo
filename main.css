@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+header {
+    padding: 16px 0;
+    background-color: rgb(26, 26, 167);
+    color: #fff;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+header nav li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main {
+    margin-bottom: 70px;
+}
+
+img {
+    width: 100%;
+}
+
+h2 {    
+    border-bottom: 3px solid rgb(26, 26, 167);
+    padding-bottom: 10px;
+    width: 100%;
+    color: rgb(26, 26, 167);
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+h3 {
+    padding-top: 40px;
+    font-size: 2rem;
+}
+
+.produtos p {
+    padding-top: 10px;
+}
+
+.produtos button {
+    margin: 20px 0;
+    padding: 8px;
+    width: 100%;
+    display: block;
+    border: none;
+    background-color: rgb(26, 26, 167);
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;    
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.sobre-loja {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1024px;
+    grid-gap: 15px;    
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .sobre-loja {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    
+    .produtos {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    
+}
+
+@media screen and (max-width: 640px) {
+    .sobre-loja {
+        display: block;
+    }
+    
+    .produtos {
+        display: block;    
+    }
+
+    .container {
+        max-width: 90%;
+    }
+
+    .produtos button {
+        margin-bottom: 50px;
+    }
+
+    h3 {
+        padding-top: 10px;
+    }
+}
